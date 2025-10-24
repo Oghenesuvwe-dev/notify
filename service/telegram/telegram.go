@@ -53,7 +53,7 @@ func (t *Telegram) SetClient(client *tgbotapi.BotAPI) {
 // For more information about telegram constants:
 //
 //	-> https://pkg.go.dev/github.com/go-telegram-bot-api/telegram-bot-api#pkg-constants
-func (t *Telegram) SetParseMode(mode string) {
+func (*Telegram) SetParseMode(mode string) {
 	parseMode = mode
 }
 

@@ -5,3 +5,9 @@ name = "go"
 
   [analyzers.meta]
   import_root = "github.com/Oghenesuvwe-dev/notify"
+
+[[transformers]]
+name = "gofmt"
+
+[[transformers]]
+name = "gofumpt"

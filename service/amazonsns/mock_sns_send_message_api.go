@@ -101,7 +101,8 @@ func (_c *mocksnsSendMessageAPI_SendMessage_Call) RunAndReturn(run func(context.
 func newMocksnsSendMessageAPI(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mocksnsSendMessageAPI {
+},
+) *mocksnsSendMessageAPI {
 	mock := &mocksnsSendMessageAPI{}
 	mock.Mock.Test(t)
 

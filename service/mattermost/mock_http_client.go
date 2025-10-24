@@ -188,7 +188,8 @@ func (_c *mockhttpClient_Send_Call) RunAndReturn(run func(context.Context, strin
 func newMockhttpClient(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mockhttpClient {
+},
+) *mockhttpClient {
 	mock := &mockhttpClient{}
 	mock.Mock.Test(t)
 

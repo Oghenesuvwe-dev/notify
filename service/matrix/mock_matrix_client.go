@@ -105,7 +105,8 @@ func (_c *mockmatrixClient_SendMessageEvent_Call) RunAndReturn(run func(context.
 func newMockmatrixClient(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mockmatrixClient {
+},
+) *mockmatrixClient {
 	mock := &mockmatrixClient{}
 	mock.Mock.Test(t)
 

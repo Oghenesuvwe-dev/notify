@@ -71,7 +71,8 @@ func (_c *mockwechatMessageManager_Send_Call) RunAndReturn(run func(*message.Cus
 func newMockwechatMessageManager(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mockwechatMessageManager {
+},
+) *mockwechatMessageManager {
 	mock := &mockwechatMessageManager{}
 	mock.Mock.Test(t)
 

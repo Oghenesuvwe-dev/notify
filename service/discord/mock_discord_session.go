@@ -99,7 +99,8 @@ func (_c *mockdiscordSession_ChannelMessageSend_Call) RunAndReturn(run func(stri
 func newMockdiscordSession(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mockdiscordSession {
+},
+) *mockdiscordSession {
 	mock := &mockdiscordSession{}
 	mock.Mock.Test(t)
 

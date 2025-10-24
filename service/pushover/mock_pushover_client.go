@@ -84,7 +84,8 @@ func (_c *mockpushoverClient_SendMessage_Call) RunAndReturn(run func(*gregdelpus
 func newMockpushoverClient(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mockpushoverClient {
+},
+) *mockpushoverClient {
 	mock := &mockpushoverClient{}
 	mock.Mock.Test(t)
 

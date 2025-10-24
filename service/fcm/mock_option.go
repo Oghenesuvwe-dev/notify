@@ -68,7 +68,8 @@ func (_c *mockOption_Execute_Call) RunAndReturn(run func(*Service) error) *mockO
 func newMockOption(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mockOption {
+},
+) *mockOption {
 	mock := &mockOption{}
 	mock.Mock.Test(t)
 

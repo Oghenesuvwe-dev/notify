@@ -97,7 +97,8 @@ func (_c *mockcallCreator_Do_Call) RunAndReturn(run func(...googleapi.CallOption
 func newMockcallCreator(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mockcallCreator {
+},
+) *mockcallCreator {
 	mock := &mockcallCreator{}
 	mock.Mock.Test(t)
 

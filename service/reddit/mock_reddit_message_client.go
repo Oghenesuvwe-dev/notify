@@ -86,7 +86,8 @@ func (_c *mockredditMessageClient_Send_Call) RunAndReturn(run func(context.Conte
 func newMockredditMessageClient(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mockredditMessageClient {
+},
+) *mockredditMessageClient {
 	mock := &mockredditMessageClient{}
 	mock.Mock.Test(t)
 

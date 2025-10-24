@@ -221,7 +221,8 @@ func (_c *mockteamsClient_SkipWebhookURLValidationOnSend_Call) RunAndReturn(run 
 func newMockteamsClient(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mockteamsClient {
+},
+) *mockteamsClient {
 	mock := &mockteamsClient{}
 	mock.Mock.Test(t)
 

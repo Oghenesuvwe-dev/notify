@@ -71,7 +71,8 @@ func (_c *mocksendToer_SendTo_Call) RunAndReturn(run func(string, string, string
 func newMocksendToer(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mocksendToer {
+},
+) *mocksendToer {
 	mock := &mocksendToer{}
 	mock.Mock.Test(t)
 

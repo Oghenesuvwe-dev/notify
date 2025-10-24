@@ -88,7 +88,8 @@ func (_c *mocktwilioClient_SendMessage_Call) RunAndReturn(run func(string, strin
 func newMocktwilioClient(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mocktwilioClient {
+},
+) *mocktwilioClient {
 	mock := &mocktwilioClient{}
 	mock.Mock.Test(t)
 

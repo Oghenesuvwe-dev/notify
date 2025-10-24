@@ -106,7 +106,8 @@ func (_c *mockslackClient_PostMessageContext_Call) RunAndReturn(run func(context
 func newMockslackClient(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mockslackClient {
+},
+) *mockslackClient {
 	mock := &mockslackClient{}
 	mock.Mock.Test(t)
 

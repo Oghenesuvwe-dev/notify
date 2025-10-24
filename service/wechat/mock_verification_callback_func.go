@@ -60,7 +60,8 @@ func (_c *mockverificationCallbackFunc_Execute_Call) RunAndReturn(run func(*http
 func newMockverificationCallbackFunc(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mockverificationCallbackFunc {
+},
+) *mockverificationCallbackFunc {
 	mock := &mockverificationCallbackFunc{}
 	mock.Mock.Test(t)
 

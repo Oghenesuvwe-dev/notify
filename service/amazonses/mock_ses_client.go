@@ -101,7 +101,8 @@ func (_c *mocksesClient_SendEmail_Call) RunAndReturn(run func(context.Context, *
 func newMocksesClient(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mocksesClient {
+},
+) *mocksesClient {
 	mock := &mocksesClient{}
 	mock.Mock.Test(t)
 

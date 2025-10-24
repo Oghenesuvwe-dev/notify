@@ -159,7 +159,8 @@ func (_c *mockfcmClient_SendMulticast_Call) RunAndReturn(run func(context.Contex
 func newMockfcmClient(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mockfcmClient {
+},
+) *mockfcmClient {
 	mock := &mockfcmClient{}
 	mock.Mock.Test(t)
 

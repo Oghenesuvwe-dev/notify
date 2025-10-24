@@ -69,7 +69,8 @@ func (_c *mocksender_Send_Call) RunAndReturn(run func(string, string) error) *mo
 func newMocksender(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mocksender {
+},
+) *mocksender {
 	mock := &mocksender{}
 	mock.Mock.Test(t)
 

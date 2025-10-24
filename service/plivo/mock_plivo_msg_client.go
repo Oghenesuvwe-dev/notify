@@ -83,7 +83,8 @@ func (_c *mockplivoMsgClient_Create_Call) RunAndReturn(run func(v7.MessageCreate
 func newMockplivoMsgClient(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mockplivoMsgClient {
+},
+) *mockplivoMsgClient {
 	mock := &mockplivoMsgClient{}
 	mock.Mock.Test(t)
 

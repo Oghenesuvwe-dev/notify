@@ -139,7 +139,8 @@ func (_c *mockviberClient_SetWebhook_Call) RunAndReturn(run func(string, []strin
 func newMockviberClient(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mockviberClient {
+},
+) *mockviberClient {
 	mock := &mockviberClient{}
 	mock.Mock.Test(t)
 

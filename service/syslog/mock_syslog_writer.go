@@ -123,7 +123,8 @@ func (_c *mocksyslogWriter_Write_Call) RunAndReturn(run func([]byte) (int, error
 func newMocksyslogWriter(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mocksyslogWriter {
+},
+) *mocksyslogWriter {
 	mock := &mocksyslogWriter{}
 	mock.Mock.Test(t)
 

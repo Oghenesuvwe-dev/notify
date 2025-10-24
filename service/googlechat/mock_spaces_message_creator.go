@@ -74,7 +74,8 @@ func (_c *mockspacesMessageCreator_Create_Call) RunAndReturn(run func(string, *c
 func newMockspacesMessageCreator(t interface {
 	mock.TestingT
 	Cleanup(func())
-}) *mockspacesMessageCreator {
+},
+) *mockspacesMessageCreator {
 	mock := &mockspacesMessageCreator{}
 	mock.Mock.Test(t)
 

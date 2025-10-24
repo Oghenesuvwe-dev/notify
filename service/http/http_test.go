@@ -31,7 +31,7 @@ func newTestServer() *testServer {
 }
 
 // handler returns the http.HandlerFunc for the test server.
-func (ts *testServer) handler() http.HandlerFunc {
+func (*testServer) handler() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		switch {
 		case r.Header.Get(headerTestError) == "true":

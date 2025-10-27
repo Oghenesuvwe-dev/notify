@@ -139,7 +139,7 @@ func payloadFromContext(ctx context.Context, subject, message string) ([]byte, e
 }
 
 // send is a wrapper that makes it primarily easier to defer the closing of the response body.
-func (s *Service) send(ctx context.Context, message []byte, subscription *Subscription, options *Options) error {
+func (*Service) send(ctx context.Context, message []byte, subscription *Subscription, options *Options) error {
 	res, err := webpush.SendNotificationWithContext(ctx, message, subscription, options)
 	if err != nil {
 		return fmt.Errorf("send notification: %w", err)
